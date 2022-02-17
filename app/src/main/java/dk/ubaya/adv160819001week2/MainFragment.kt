@@ -22,7 +22,8 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btnStart.setOnClickListener{
-            val action = MainFragmentDirections.actionGameFragment()
+            val playerName = txtName.editText?.text.toString()
+            val action = MainFragmentDirections.actionGameFragment(playerName)
             Navigation.findNavController(it).navigate(action)
         }
     }
