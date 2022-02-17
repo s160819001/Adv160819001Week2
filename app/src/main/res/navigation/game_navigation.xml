@@ -24,8 +24,5 @@
         <action
             android:id="@+id/actionMainFragment"
             app:destination="@id/mainFragment" />
-        <argument
-            android:name="playerName"
-            app:argType="string" />
     </fragment>
 </navigation>
