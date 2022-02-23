@@ -23,7 +23,9 @@
         tools:layout="@layout/fragment_game" >
         <action
             android:id="@+id/actionMainFragment"
-            app:destination="@id/mainFragment" />
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
         <argument
             android:name="playerName"
             app:argType="string" />
